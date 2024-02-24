@@ -10,19 +10,22 @@
     <h1>Mapua MCL WebDev Club Registration</h1>
     <form runat="server">
         <asp:Label runat="server" Text="Full Name"></asp:Label><br />
-        <asp:TextBox runat="server" ID="fullName" /><br />
+        <asp:TextBox runat="server" ID="fullName" />
         <%-- Todo 4.1 Add a validator that makes sure the text box is not empty --%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_validators.htm#:~:text=RequiredFieldValidator%20Control --%>
+        <asp:RequiredFieldValidator runat="server" ID="FNRFV" ControlToValidate="fullName" ErrorMessage="Please enter full name."></asp:RequiredFieldValidator> <br />
 
         <asp:Label runat="server" Text="Age"></asp:Label><br />
-        <asp:TextBox runat="server" ID="age" TextMode="Number" /><br />
+        <asp:TextBox runat="server" ID="age" TextMode="Number" />
         <%-- Todo 4.2 Add a range validator that checks if the value inputted in the text box is within 0 and 100--%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_validators.htm#:~:text=RangeValidator%20Control--%>
+        <asp:RangeValidator runat="server" ID="AgeRV" Type="Integer" MinimumValue="0" MaximumValue="100" ControlToValidate="age" ErrorMessage="Please enter a whole number between 0-100"></asp:RangeValidator><br />
 
         <asp:Label runat="server" Text="Email"></asp:Label><br />
-        <asp:TextBox runat="server" ID="email" /><br />
+        <asp:TextBox runat="server" ID="email" />
         <%-- Todo 4.3 Add a regex validator that checks if the inputted value is a valid email. The regex for validating email is /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ --%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_validators.htm#:~:text=The%20RegularExpressionValidator%20allows --%>
+        <asp:RegularExpressionValidator runat="server" ID="EmailREV" ControlToValidate="email" ErrorMessage="Please enter a valid email" ValidationExpression="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"></asp:RegularExpressionValidator> <br />
 
         <asp:Label runat="server" Text="Confirm Email"></asp:Label><br />
         <asp:TextBox runat="server" ID="confirmEmail" /><br />
