@@ -13,5 +13,10 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void PlayClick(object sender, EventArgs e)
+        {
+            nowPlaying.InnerText = "Now playing Radiohead - Bodysnatchers";
+        }
     }
 }
