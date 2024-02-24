@@ -13,5 +13,9 @@ namespace Module1Exercise1
         {
 
         }
+        protected void SubmitClick(object sender, EventArgs e)
+        {
+            result.Text = fullName.Text + ", " + age.Text + ", " + email.Text;
+        }
     }
 }
