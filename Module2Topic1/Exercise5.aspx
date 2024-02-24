@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" CodeBehind="~/Exercise5.aspx.cs" Inherits="Module1Exercise1.Exercise4" %>
+﻿<%@ Page Language="C#" MasterPageFile="Exercise5.Master" AutoEventWireup="true" CodeBehind="~/Exercise5.aspx.cs" Inherits="Module1Exercise1.Exercise4" %>
 
 <%-- Exercise 5: Creating reusable layouts using master pages--%>
 <%-- TODO 5.1 Create a master page that contains a navigation bar, a main content, and a footer. --%>
@@ -12,3 +12,8 @@
 <%-- * How would you compare plain HTML to ASP.NET WebForms --%>
 <%-- * The code behind (C#) and JavaScript seem to share many use cases. When should you implement logic in the code behind and when should you implement logic in JavaScript? Provide examples. --%>
 <%-- * Explain what post backs are. --%>
+<asp:Content runat="server" ID="HeadContent" ContentPlaceHolderID="head"></asp:Content>
+
+<asp:Content runat="server" ID="MainContent" ContentPlaceHolderID="BodyPH">
+    <h1>Testing</h1>
+</asp:Content>

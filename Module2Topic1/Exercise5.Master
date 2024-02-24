@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Exercise5.Master.cs" Inherits="Module2Topic1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Exercise 5</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body{
+            margin: 0px 0px 0px 0px;
+            background-color: tan;
+            font-family: Arial;
+        }
+        #fullPage{
+            height: 600px;
+            width: 100%;
+        }
+        #pageHeader{
+            position:fixed;
+            top:0;
+            padding: 10px 10px 10px 10px;
+            background-color: bisque;
+            border-bottom: solid 1px black;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10%;
+            justify-items: center;
+            align-items: center;
+
+        }
+        #pageHeader a{
+            font-size: 20px;
+        }
+        #pageHeader, #filler{
+            height:75px;
+            width:100%;
+        }
+        #pageFooter{
+            height:50px;
+            width:100%;
+            background-color: bisque;
+            border-top: solid 1px black;
+            display:flex;
+            justify-content:center;
+            align-content:center;
+        }
+        #pageFooter h1{
+            font-size:20px;
+            font-weight:bold;
+        }
+        #pageBody{
+            padding:100px, 100px, 100px, 100px;
+        }
+    </style>
+</head>
+<body>
+    <div runat="server" id="pageHeader">
+        <a runat="server" href="Exercise1.aspx">Exercise 1</a>
+        <a runat="server" href="Exercise2.aspx">Exercise 2</a>
+        <a runat="server" href="Exercise3.aspx">Exercise 3</a>
+        <a runat="server" href="Exercise4.aspx">Exercise 4</a>
+        <a runat="server" href="Exercise5.aspx">Exercise 5</a>
+    </div>
+    <div runat="server" id="filler"></div>
+    <form id="fullPage" runat="server">
+        <div runat="server" id="pageBody">
+            <asp:ContentPlaceHolder ID="BodyPH" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div runat="server" id="pageFooter">
+        <h1>Copyright Jisaac5 2024</h1>
+    </div>
+</body>
+</html>
