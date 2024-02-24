@@ -42,22 +42,13 @@ namespace Module2Topic1
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl filler;
 
         /// <summary>
-        /// fullPage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm fullPage;
-
-        /// <summary>
         /// pageBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pageBody;
+        protected global::System.Web.UI.HtmlControls.HtmlForm pageBody;
 
         /// <summary>
         /// BodyPH control.

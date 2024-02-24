@@ -13,7 +13,7 @@
             background-color: tan;
             font-family: Arial;
         }
-        #fullPage{
+        #pageBody{
             height: 600px;
             width: 100%;
         }
@@ -25,14 +25,17 @@
             border-bottom: solid 1px black;
             display:flex;
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: center;
             gap: 10%;
             justify-items: center;
             align-items: center;
+            font-weight:bold;
 
         }
         #pageHeader a{
             font-size: 20px;
+            text-decoration:none;
+            border:dotted 2px black;
         }
         #pageHeader, #filler{
             height:75px;
@@ -51,8 +54,9 @@
             font-size:20px;
             font-weight:bold;
         }
-        #pageBody{
-            padding:100px, 100px, 100px, 100px;
+        #homepage{
+            text-align:center;
+            padding: 20px 20px 20px 20px;
         }
     </style>
 </head>
@@ -65,11 +69,9 @@
         <a runat="server" href="Exercise5.aspx">Exercise 5</a>
     </div>
     <div runat="server" id="filler"></div>
-    <form id="fullPage" runat="server">
-        <div runat="server" id="pageBody">
-            <asp:ContentPlaceHolder ID="BodyPH" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+    <form id="pageBody" runat="server">
+        <asp:ContentPlaceHolder ID="BodyPH" runat="server">
+        </asp:ContentPlaceHolder>
     </form>
     <div runat="server" id="pageFooter">
         <h1>Copyright Jisaac5 2024</h1>

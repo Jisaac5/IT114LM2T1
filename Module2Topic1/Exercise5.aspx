@@ -15,5 +15,19 @@
 <asp:Content runat="server" ID="HeadContent" ContentPlaceHolderID="head"></asp:Content>
 
 <asp:Content runat="server" ID="MainContent" ContentPlaceHolderID="BodyPH">
-    <h1>Testing</h1>
+    <div id="homepage">
+        <h2>How would you compare plain HTML to ASP.NET WebForms</h2>
+        <p>ASP.NET seems to be more specialized for server data ineteractions than plain HTML.</p>
+
+        <h2>The code behind (C#) and JavaScript seem to share many use cases. 
+            When should you implement logic in the code behind and when should 
+            you implement logic in JavaScript? Provide examples.</h2>
+        <p>To me it seems that the choice of language is up to preference/expertise, but there can be some cases where using
+            one over the other can lead to simpler solutions to problems like with JS's alert() function. It's also worth noting that
+            some users may block JS.
+        </p>
+
+        <h2>Explain what post backs are.</h2>
+        <p>Post backs are when some controls post something to the server/database and changes are reflected back on the same page the control is in.</p>
+    </div>
 </asp:Content>
